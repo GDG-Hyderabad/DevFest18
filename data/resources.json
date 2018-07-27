@@ -36,8 +36,8 @@
       "title": "About",
       "links": [
         {
-          "name": "GDG Lviv",
-          "url": "http://lviv.gdg.org.ua/",
+          "name": "GDG Hyderabad",
+          "url": "https://gdghyderabad.in/",
           "newTab": true
         },
         {
@@ -47,7 +47,7 @@
         },
         {
           "name": "Meet the Team",
-          "url": "https://devfest.gdg.org.ua/team/",
+          "url": "https://devfest.gdghyderabad.in/team/",
           "newTab": true
         }
       ]
@@ -56,23 +56,23 @@
       "title": "Explore Past DevFests",
       "links": [
         {
-          "name": "DFUA 2013",
-          "url": "http://gdg-devfest-ua.appspot.com/",
+          "name": "DevFest 2017",
+          "url": "https://devfest17.gdghyderabad.in/",
           "newTab": true
         },
         {
-          "name": "DFUA 2014",
-          "url": "https://dfua14.firebaseapp.com//",
+          "name": "DevFest 2016",
+          "url": "https://plus.google.com/photos/114190263289122404629/album/6341924267998385121",
           "newTab": true
         },
         {
-          "name": "DFUA 2015",
-          "url": "https://dfua15.firebaseapp.com/",
+          "name": "DevFest 2015",
+          "url": "https://www.facebook.com/media/set/?set=a.884590488324312.1073741842.127530554030313&type=1&l=36a406f0fa",
           "newTab": true
         },
         {
-          "name": "DFUA 2016",
-          "url": "https://dfua16.firebaseapp.com/",
+          "name": "DevFest 2014",
+          "url": "https://www.facebook.com/media/set/?set=a.470087029774662.1073741834.127530554030313&type=1&l=bba8ccbf6c",
           "newTab": true
         }
       ]
