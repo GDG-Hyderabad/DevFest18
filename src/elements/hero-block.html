@@ -55,11 +55,13 @@
         margin: 30px 0;
         font-size: 40px;
         text-transform: capitalize;
+        color: var(--primary-text-color);
       }
 
       div ::slotted(.hero-description) {
         margin-bottom: 30px;
         max-width: 600px;
+        color: var(--primary-text-color);
       }
 
       @media (min-width: 812px) {
@@ -70,6 +72,7 @@
         .hero-content {
           padding-top: 120px;
           padding-bottom: 60px;
+          color: var(--primary-text-color);
         }
       }
 
@@ -83,7 +86,7 @@
       <plastic-image
         class="hero-image"
         srcset="[[backgroundImage]]"
-        style$="background-color: [[backgroundColor]]"
+        style$="background-color: [[background]]"
         sizing="cover"
         lazy-load preload fade fit
       ></plastic-image>
@@ -109,7 +112,7 @@
         return {
           active: Boolean,
           backgroundImage: String,
-          backgroundColor: String,
+          background: String,
           fontColor: String,
           hideLogo: Boolean,
         };
@@ -117,7 +120,7 @@
 
       static get observers() {
         return [
-          '_setState(active, backgroundImage, backgroundColor, fontColor, hideLogo)',
+          '_setState(active, backgroundImage, background, fontColor, hideLogo)',
         ];
       }
 
@@ -125,11 +128,11 @@
         return !!backgroundImage;
       }
 
-      _setState(active, backgroundImage, backgroundColor, fontColor, hideLogo) {
+      _setState(active, backgroundImage, background, fontColor, hideLogo) {
         if (active) {
           uiActions.setHeroSettings({
             backgroundImage,
-            backgroundColor,
+            background,
             fontColor,
             hideLogo,
           });
