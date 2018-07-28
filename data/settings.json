@@ -113,20 +113,20 @@
   },
   "location": {
     "label": "Location",
-    "name": "Planeta kino",
+    "name": "Hyderabad",
     "city": "Hyderabad",
     "short": "Hyderabad, Telangana",
-    "address": "36 Shchyretska St, Lviv, Ukraine",
+    "address": "Hyderabad, Telangana",
     "pointer": {
-      "latitude": 49.809841,
-      "longitude": 23.972805,
+      "latitude": 78.3702468,
+      "longitude": 17.4583623,
       "zoom": 5
     },
     "mapCenter": {
       "latitude": 48,
       "longitude": 8
     },
-    "description": "Newly built Pivdennyi Expo is a long-awaited exhibition center in Lviv, which can fulfill the needs of the large-scale event"
+    "description": "Hyderabad is the capital of southern India's Telangana state. A major center for the technology industry, it's home to many upscale restaurants and shops. Its historic sites include Golconda Fort, a former diamond-trading center that was once the Qutb Shahi dynastic capital."
   },
   "mediaQueries": {
     "xs": {
