@@ -56,7 +56,7 @@ When you check in at the conference, you'll need to provide a current student ID
 
 #### **Press Tickets**
 
-We’ll be offering a limited number of press passes to qualified members of the media. To submit a request, please fill out this [FORM]( https://goo.gl/forms/SmKHuksRw8sb0eoB2). If you have additional questions, please email [devfest@gdg.org.ua](mailto:devfest@gdg.org.ua) for more information. Please note that we’ll have a limited number of press passes available and will be vetting requests. Filling out the form doesn’t guarantee you a press pass. Our team will contact you if we’re able to accommodate your request.
+We’ll be offering a limited number of press passes to qualified members of the media. To submit a request, please fill out this [FORM]( https://goo.gl/forms/SmKHuksRw8sb0eoB2). If you have additional questions, please email [gdevghyd@gmail.com](mailto:gdevghyd@gmail.com) for more information. Please note that we’ll have a limited number of press passes available and will be vetting requests. Filling out the form doesn’t guarantee you a press pass. Our team will contact you if we’re able to accommodate your request.
 
 #### **I Love DFUA**
 
@@ -82,14 +82,14 @@ Special tickets for real supporters of our conference. As we’re organizing the
 - By registering for a ticket you acknowledge that your information will be used in accordance with [Tickets provider Terms of Service](https://2event.com/en/agreement). 
 - All registered attendees agree to allow GDG Lviv to contact them regarding their registration and attendance at the event. By registering for a ticket, you agree to allow GDG Lviv to communicate with you via email with information regarding the event. 
 - You agree to be solely responsible for your own safety, belongings and well-being while participating in GDG DevFest Ukraine. Organizers won't be liable for your participation in GDG DevFest Ukraine. 
-- Applicants and attendees can request the deletion of their registration data after the event ends by emailing [devfest@gdg.org.ua](mailto:devfest@gdg.org.ua). 
+- Applicants and attendees can request the deletion of their registration data after the event ends by emailing [gdevghyd@gmail.com](mailto:gdevghyd@gmail.com). 
   
 
 ### More Registration Details
 
 - Please make sure to register using the name that matches the government-issued photo ID you’ll be presenting when you check in to the festival. 
 - Registration for GDG DevFest Ukraine includes two full days of sessions, product demos, admission to the after hours party, and attendance at the keynotes. We also provide complimentary snacks each day. In addition, attendees receive a conference badge and may be offered additional gifts.  
-- If you aren’t a resident of Ukraine, you should check with your local government to determine the required documents and arrangements needed for your travel to Ukraine. If you require a visa letter regarding your GDG DevFest Ukraine attendance please indicate so when completing the registration form and we’ll email it to you within 7 business days. If you haven’t received your letter or have questions regarding the process, you can contact [devfest@gdg.org.ua](mailto:devfest@gdg.org.ua). GDG Lviv won’t be able to contact an embassy on your behalf. 
+- If you aren’t a resident of Ukraine, you should check with your local government to determine the required documents and arrangements needed for your travel to Ukraine. If you require a visa letter regarding your GDG DevFest Ukraine attendance please indicate so when completing the registration form and we’ll email it to you within 7 business days. If you haven’t received your letter or have questions regarding the process, you can contact [gdevghyd@gmail.com](mailto:gdevghyd@gmail.com). GDG Lviv won’t be able to contact an embassy on your behalf. 
   
 
 ## Attendance Details
