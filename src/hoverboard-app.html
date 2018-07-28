@@ -56,23 +56,27 @@
       app-drawer app-toolbar {
         padding: 36px 24px 24px;
         border-bottom: 1px solid var(--divider-color);
+        background-color: var(--primary-background-color);
       }
 
       app-drawer .dates {
         margin-top: 42px;
         font-size: 22px;
         line-height: 0.95;
+        color: var(--text-primary-color);
       }
 
       app-drawer .location {
         margin-top: 4px;
         font-size: 15px;
-        color: var(--secondary-text-color);
+        color: var(--text-primary-color);
       }
 
       .drawer-list {
         padding: 16px 0;
         display: block;
+        color: var(--text-primary-color);
+        background-color: var(--primary-background-color);
       }
 
       .drawer-list a {
@@ -83,10 +87,12 @@
 
       app-drawer a {
         padding: 8px 24px;
+        color: var(--text-primary-color);
       }
 
       .drawer-list a.selected {
         font-weight: 500;
+        color: var(--text-primary-color);
       }
 
       app-toolbar {
@@ -95,6 +101,7 @@
 
       .toolbar-logo {
         --iron-image-height: 32px;
+        color: var(--text-primary-color);
       }
 
       app-header-layout {
@@ -111,6 +118,10 @@
         height: 100%;
       }
 
+      .drawer-content {
+      background-color: var(--primary-background-color);
+      }
+
       .drawer-content iron-icon {
         --iron-icon-width: 14px;
         margin-left: 6px;
@@ -118,6 +129,7 @@
 
       .buy-ticket {
         padding: 16px 24px;
+        background-color: var(--primary-background-color);
       }
 
       @media (min-width: 640px) {
