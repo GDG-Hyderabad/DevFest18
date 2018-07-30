@@ -46,8 +46,9 @@
       }
 
       .action-buttons {
-        margin: 0 -8px;
+        margin-top: 48px;
         font-size: 14px;
+        justify-content: flex-start !important;
       }
 
       .action-buttons paper-button {
@@ -101,6 +102,7 @@
 
         .home-content {
           margin-top: -48px;
+          width: 1000px;
         }
 
         .scroll-down {
@@ -121,10 +123,16 @@
           max-width: 320px;
         }
 
-        .info-items {
-          margin: 48px auto;
-          font-size: 28px;
+        .info-item-hyd {
+          margin:auto;
+          font-size: 18px;
+          line-height: 3.1;
+        }
+        .info-item-hero {
+          margin: auto;
+          font-size: 62px;
           line-height: 1.1;
+          font-weight: bold;
         }
       }
     </style>
@@ -138,15 +146,16 @@
       font-color="{$ heroSettings.home.fontColor $}"
       active="[[active]]"
     >
-      <div class="home-content" layout vertical center>
-        <plastic-image class="hero-logo" srcset="/images/logo.svg" alt="{$ title $}"></plastic-image>
-        <div class="info-items highlight-font">
-          <div class="info-item">{$ location.city $}. {$ dates $}</div>
-          <div class="info-item">{$ heroSettings.home.description $}</div>
+      <div class="home-content">
+        <div class="info-item-hyd highlight-font">
+          <div class="info-item" align="left">{$ location.city $}. {$ dates $}</div>
+        </div>
+        <div class="info-item-hero highlight-font">
+            <div class="info-item" align="left">{$ heroSettings.home.description $}</div>
         </div>
 
 
-        <div class="action-buttons" layout horizontal center-justified wrap>
+        <div class="action-buttons" layout horizontal left-justified wrap>
           <paper-button
             on-tap="_playVideo"
             ga-on="click"

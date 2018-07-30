@@ -46,7 +46,7 @@
   ],
   "heroSettings": {
     "home": {
-      "description": "Be a hero. Be a GDG!",
+      "description": "LARGEST DEVELOPER CONFERENCE IN TELANGANA",
       "background": {
         "color": "#673ab7",
         "image": "/images/backgrounds/home.jpg"
@@ -114,7 +114,7 @@
   "location": {
     "label": "Location",
     "name": "Hyderabad",
-    "city": "Hyderabad",
+    "city": "HYDERABAD",
     "short": "Hyderabad, Telangana",
     "address": "Hyderabad, Telangana",
     "pointer": {
