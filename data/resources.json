@@ -217,7 +217,7 @@
     "emailAddress": "Email Address",
     "firstName": "First Name",
     "lastName": "Last Name",
-    "formTitle": "Get the latest updates, insights and news about GDG DevFest Ukraine sent to your inbox.",
+    "formTitle": "Get the latest updates, insights and news about GDG DevFest Hyderabad sent to your inbox.",
     "emailRequired": "Please enter a valid email address.",
     "subscribe": "Subscribe",
     "subscribed": "Subscribed",
@@ -259,7 +259,7 @@
     "blocks": [
       {
         "title": "Organizer",
-        "description": "<a href='http://lviv.gdg.org.ua' target='_blank'>GDG Lviv</a> with support of 10 GDGs from all around Ukraine is proud organizer of DevFest Ukraine",
+        "description": "<a href='https://gdghyderabad.in' target='_blank'>GDG Hyderabad</a> is a drive to concentrate the efforts of many developers in and around the magnificent city of Hyderabad to learn, share and get productive using the various Google products.",
         "callToAction": {
           "label": "Open team page",
           "link": "/team"
