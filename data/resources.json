@@ -13,7 +13,7 @@
   "buyTicket": "Buy ticket",
   "signIn": "Sign in",
   "signOut": "Sign out",
-  "viewHighlights": "View Highlights",
+  "viewHighlights": "GDG India",
   "offlineMessage": "You can still work offline.",
   "cachingComplete": "Caching complete! Future visits will work offline.",
   "newVersionAvailable": "A new version of this app is available.",
@@ -119,8 +119,9 @@
       },
       "howItWas": {
         "description": "Hyderabad DevFest can be considered as “Technical Diwali” that celebrates the achievements of the computing world and the constant urge to connect, code and innovate.",
-        "label": "See how it was in 2017",
-        "youtubeId": "TdpbgRgz6eE"
+        "label": "Join GDG Hyderabad",
+        "link": "https://www.meetup.com/GDGHyderabad/",
+        "youtubeId":"nXTaiZRHa4g"
       }
     },
     "statisticsBlock": {
