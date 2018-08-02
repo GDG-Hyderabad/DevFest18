@@ -15,12 +15,20 @@
 
       :host  {
         display: block;
+        background-color: var(--primary-background-color);
       }
 
       .description-wrapper {
-          background: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
-          width: 100%;
-          overflow: hidden;
+        background: linear-gradient(to right, #b24592, #f15f79);
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .description-image {
+        position: relative;
+        display: block;
+        width: 100%;
+        opacity: 0.3;
       }
 
       .team-title {
@@ -127,13 +135,16 @@
       <div class="hero-title highlight-font">{$ heroSettings.team.title $}</div>
       <p class="hero-description">{$ heroSettings.team.description $}</p>
     </hero-block>
+     
 
     <div class="description-wrapper">
-      <div class="container" layout horizontal justified>
-        <marked-element class="description" markdown="{$ team.description $}">
-          <div slot="markdown-html"></div>
-        </marked-element>
-      </div>
+      <div class="description-image" style="background-image: url(../images/pattern-white.svg)">
+        <div class="container" layout horizontal justified>
+          <marked-element class="description" markdown="{$ team.description $}">
+            <div slot="markdown-html"></div>
+          </marked-element> 
+        </div>
+      </div> 
     </div>
 
     <div class="container">
