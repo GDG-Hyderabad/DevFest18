@@ -28,9 +28,19 @@
         position: relative;
         display: block;
         width: 100%;
-        opacity: 0.3;
       }
 
+      .description-bgimage {
+        position: absolute;
+        /* background-size: cover; */
+        background-repeat: repeat;
+        background-position: center center;
+        height: 900px;
+        width: 100%;
+        opacity: 0.1;
+      }
+
+    
       .team-title {
         font-size: 30px;
         line-height: 2.5;
@@ -138,7 +148,8 @@
      
 
     <div class="description-wrapper">
-      <div class="description-image" style="background-image: url(../images/pattern-white.svg)">
+      <div class="description-image" >
+        <div class="description-bgimage" style="background-image: url(../images/pattern-white.svg)"></div>
         <div class="container" layout horizontal justified>
           <marked-element class="description" markdown="{$ team.description $}">
             <div slot="markdown-html"></div>
