@@ -15,9 +15,23 @@
         width: 100%;
         background: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
         color: #fff;
-        padding: 16px 0;
       }
 
+      .description-image {
+        position: relative;
+        display: block;
+        width: 100%;
+      }
+
+      .description-bgimage {
+        position: absolute;
+        /* background-size: cover; */
+        background-repeat: repeat;
+        background-position: center center;
+        height: 100%;
+        width: 100%;
+        opacity: 0.1;
+      }
       .description {
         font-size: 24px;
         line-height: 1.5;
@@ -26,6 +40,7 @@
 
       paper-button {
         color: #fff;
+        margin: 0 0 10px;
       }
 
       paper-button[disabled] {
@@ -34,34 +49,32 @@
       }
 
       @media (min-width: 640px) {
-        :host {
-          padding: 32px 0;
-        }
-
         .description {
           font-size: 32px;
-          margin: 0 0 24px;
+          margin: 10px 0 40px;
           text-align: center;
         }
       }
 
 
     </style>
-
-    <div class="container" layout vertical center$="[[viewport.isTabletPlus]]">
-      <div class="description"> {$ subscribeBlock.callToAction.description $}</div>
-      <div class="cta-button">
-        <paper-button class="animated icon-right"
-                      disabled$="[[subscribed]]"
-                      on-tap="_subscribe"
-                      ga-on="click"
-                      ga-event-category="attendees"
-                      ga-event-action="subscribe"
-                      ga-event-label="subscribe block">
-          <span class="cta-label">[[ctaLabel]]</span>
-          <iron-icon icon$="hoverboard:[[ctaIcon]]"></iron-icon>
-        </paper-button>
-      </div>
+    <div class="description-image">
+        <div class="description-bgimage" style="background-image: url(../images/pattern-white.svg)"></div>
+        <div class="container" layout vertical center$="[[viewport.isTabletPlus]]">
+          <div class="description"> {$ subscribeBlock.callToAction.description $}</div>
+            <div class="cta-button">
+              <paper-button class="animated icon-right"
+                            disabled$="[[subscribed]]"
+                            on-tap="_subscribe"
+                            ga-on="click"
+                            ga-event-category="attendees"
+                            ga-event-action="subscribe"
+                            ga-event-label="subscribe block">
+                <span class="cta-label">[[ctaLabel]]</span>
+                <iron-icon icon$="hoverboard:[[ctaIcon]]"></iron-icon>
+              </paper-button>
+            </div>
+        </div>
     </div>
 
   </template>
