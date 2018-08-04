@@ -27,6 +27,22 @@
         position: relative;
       }
 
+      .description-image {
+        position: relative;
+        display: block;
+        width: 100%;
+      }
+
+      .description-bgimage {
+        position: absolute;
+        /* background-size: cover; */
+        background-repeat: repeat;
+        background-position: center center;
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+      }
+
       .fab paper-fab {
         background: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
         color: inherit;
@@ -49,14 +65,16 @@
       }
 
     </style>
-
+    <div class="description-bgimage" style="background-image: url(../images/pattern-white.svg)"></div>
     <div class="container">
-      <div class="fab">
-        <paper-fab class="back-to-top" icon="hoverboard:up" on-click="backToTop"></paper-fab>
+      <div class="description-image" >
+          <div class="fab">
+            <paper-fab class="back-to-top" icon="hoverboard:up" on-click="backToTop"></paper-fab>
+          </div>
+          <footer-social layout flex flex-auto horizontal wrap></footer-social>
+          <footer-rel></footer-rel>
+          <footer-nav layout horizontal wrap justified center></footer-nav>
       </div>
-      <footer-social layout flex flex-auto horizontal wrap></footer-social>
-      <footer-rel></footer-rel>
-      <footer-nav layout horizontal wrap justified center></footer-nav>
     </div>
   </template>
 

@@ -24,7 +24,23 @@
         grid-gap: 32px;
         grid-template-columns: 1fr;
       }
+      
+      .description-image {
+        position: relative;
+        display: block;
+        width: 100%;
+      }
 
+      .description-bgimage {
+        position: absolute;
+        /* background-size: cover; */
+        background-repeat: repeat;
+        background-position: center center;
+        height: 900px;
+        width: 100%;
+        opacity: 0.1;
+      }
+  
       .statistics-block {
         width: 100%;
         display: grid;
@@ -66,9 +82,9 @@
     </style>
 
     <div class="container">
-
+      
       <div class="content">
-
+        
         <div>
           <h1 class="container-title">{$ aboutBlock.title $}</h1>
           <p>{$ aboutBlock.callToAction.featuredSessions.description $}</p>
