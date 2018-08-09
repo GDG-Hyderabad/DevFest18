@@ -1619,7 +1619,7 @@
     "price" : 80,
     "soldOut" : false,
     "starts" : "Feb 7",
-    "url" : "https://2event.com/events/1027108"
+    "url" : "#"
   }, {
     "available" : false,
     "currency" : "$",
@@ -1631,7 +1631,7 @@
     "regular" : true,
     "soldOut" : true,
     "starts" : "Feb 7",
-    "url" : "https://2event.com/events/1027108"
+    "url" : "#"
   }, {
     "available" : true,
     "currency" : "$",
@@ -1643,7 +1643,7 @@
     "regular" : true,
     "soldOut" : false,
     "starts" : "Feb 7",
-    "url" : "https://2event.com/events/1027108"
+    "url" : "#"
   }, {
     "available" : false,
     "currency" : "$",
@@ -1656,7 +1656,7 @@
     "regular" : true,
     "soldOut" : false,
     "starts" : "Jul 1",
-    "url" : "https://2event.com/events/1027108"
+    "url" : "#"
   }, {
     "available" : true,
     "currency" : "$",
@@ -1664,7 +1664,7 @@
     "name" : "I Love DFUA",
     "price" : 280,
     "soldOut" : false,
-    "url" : "https://2event.com/events/1027108"
+    "url" : "#"
   } ],
   "triggers" : {
     "images" : false
