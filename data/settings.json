@@ -49,7 +49,7 @@
       "description": "LARGEST DEVELOPER CONFERENCE IN TELANGANA",
       "background": {
         "color": "#673ab7",
-        "image": "/images/backgrounds/home.png"
+        "image": "/images/backgrounds/home.jpg"
       },
       "fontColor": "#FFF"
     },
@@ -180,8 +180,8 @@
   },
   "mailto": "gdevghyd@gmail.com",
   "mailchimp": {
-    "url": "https://gdg.us11.list-manage.com/subscribe/post?u=b7e853a79164ddfdbda3ed77b&amp;id=7993e39fbe",
-    "name": "b_b7e853a79164ddfdbda3ed77b_7993e39fbe"
+    "url": "https://gdghyd.us14.list-manage.com/subscribe?u=7d5d73d17f2c4ddbb901dc30d&id=cce1c4385b",
+    "name": "7d5d73d17f2c4ddbb901dc30d_cce1c4385b"
   },
   "signInProviders": {
     "providersData": [
