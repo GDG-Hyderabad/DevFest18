@@ -25,7 +25,7 @@ const mailchimpSubscribe = functions.firestore.document('/subscribers/{id}')
   });
 
 function subscribeToMailchimp(mailchimpConfig, subscriberData, emailHash) {
-  const uri = `https://${mailchimpconfig.dc}.api.mailchimp.com/3.0/lists/${mailchimpconfig.listid}/members`;
+  const uri = `https://${mailchimpConfig.dc}.api.mailchimp.com/3.0/lists/${mailchimpConfig.listid}/members`;
   const url = emailHash ? `${uri}/${emailHash}` : uri;
   const method = emailHash ? 'PATCH' : 'POST';
 
@@ -33,7 +33,7 @@ function subscribeToMailchimp(mailchimpConfig, subscriberData, emailHash) {
     method,
     body: JSON.stringify(subscriberData),
     headers: {
-      'Authorization': `apiKey ${mailchimpconfig.apikey}`,
+      'Authorization': `apiKey ${mailchimpConfig.apikey}`,
       'Content-Type': 'application/json',
     },
   });

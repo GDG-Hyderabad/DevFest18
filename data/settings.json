@@ -1,8 +1,8 @@
 {
   "organizer": {
     "name": "GDG Hyderabad",
-    "twitter": "gdglviv",
-    "blog": "https://medium.com/gdg-lviv",
+    "twitter": "gdghyd",
+    "blog": "https://gdghyderabad.in/",
     "url": "https://gdghyderabad.in/"
   },
   "startDate": "2017-10-013T09:00:00+03:00",
@@ -15,7 +15,7 @@
   "dateFormat": {
     "locale": "en-US"
   },
-  "hashtag": "DevFest17",
+  "hashtag": "DevFest18",
   "disabledSchedule": false,
   "navigation": [
     {
