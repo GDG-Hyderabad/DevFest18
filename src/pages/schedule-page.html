@@ -24,13 +24,13 @@
 
       :host {
         display: block;
-        height: 100%;
+        min-height: 100%;
+        background-color: var(--primary-background-color);
       }
 
       .container {
-        min-height: 80%;
         background-color: var(--primary-background-color);
-        max-width: 100%;
+        max-width: 80%;
         min-height: 100%;
       }
 
@@ -48,7 +48,7 @@
 
       @media (min-width: 640px) {
         :host {
-          background-color: #fff;
+          background-color: var(--primary-background-color);
         }
       }
 
