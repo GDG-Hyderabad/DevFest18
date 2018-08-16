@@ -14,10 +14,13 @@
     <style>
 
       :host {
-        margin: -24px auto;
+        margin: 0px auto;
         display: block;
         position: relative;
-        
+      }
+
+      .container, .container-narrow {
+        padding: 0px 16px;
       }
 
       .description-card {
@@ -26,6 +29,7 @@
         background: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
         color: var(--text-primary-color);
       }
+
 
       .bottom-info {
         margin-top: 24px;
@@ -41,7 +45,8 @@
 
       @media (min-width: 640px) {
         :host {
-          margin: 64px auto 72px;
+          border-top: 64px solid #13191E;
+          border-bottom: 64px solid #13191E;
         }
 
         .map-container {
@@ -67,38 +72,38 @@
       }
 
     </style>
-
-    <template is="dom-if" if="[[viewport.isTabletPlus]]">
-      <div class="map-container">
-        <good-map
-          id="map"
-          api-key="{$ googleMapApiKey $}"
-          latitude="{$ location.mapCenter.latitude $}"
-          longitude="{$ location.mapCenter.longitude $}"
-          zoom="{$ location.pointer.zoom $}"
-          map-options="[[options]]"
-        ></good-map>
-      </div>
-    </template>
-
-    <div class="container" layout vertical end-justified fit$="[[viewport.isTabletPlus]]">
-      <div class="description-card" layout vertical justified>
-        <div>
-          <h2>{$ mapBlock.title $}</h2>
-          <p>{$ location.description $}</p>
+    
+      <template is="dom-if" if="[[viewport.isTabletPlus]]">
+          <div class="map-container">
+            <good-map
+              id="map"
+              api-key="{$ googleMapApiKey $}"
+              latitude="{$ location.mapCenter.latitude $}"
+              longitude="{$ location.mapCenter.longitude $}"
+              zoom="{$ location.pointer.zoom $}"
+              map-options="[[options]]"
+            ></good-map>
+          </div>
+      </template>
+    
+      <div class="container" layout vertical end-justified fit$="[[viewport.isTabletPlus]]">
+        <div class="description-card" layout vertical justified>
+          <div>
+            <h2>{$ mapBlock.title $}</h2>
+            <p>{$ location.description $}</p>
+          </div>
+          <div class="bottom-info" layout horizontal justified center>
+            <span class="address">{$ location.address $}</span>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination={$ location.pointer.latitude $},{$ location.pointer.longitude $}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <paper-icon-button class="directions" icon="hoverboard:directions"></paper-icon-button>
+            </a>
+          </div>
         </div>
-        <div class="bottom-info" layout horizontal justified center>
-          <span class="address">{$ location.address $}</span>
-          <a
-            href="https://www.google.com/maps/dir/?api=1&destination={$ location.pointer.latitude $},{$ location.pointer.longitude $}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <paper-icon-button class="directions" icon="hoverboard:directions"></paper-icon-button>
-          </a>
-        </div>
       </div>
-    </div>
 
   </template>
 
