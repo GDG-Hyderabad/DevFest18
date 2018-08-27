@@ -82,6 +82,7 @@
     "schedule": {
       "title": "Schedule",
       "metaDescription": "Choose your sessions to visit",
+      "description":"A top notch line-up of developers will be sharing their knowledge and experience with attendees. Topics will cover everything from CSS to Neural Networks! We’re working on pulling together a fantastic agenda, so stay tuned for more details coming soon!",
       "background": {
         "color": "#fff"
       },
