@@ -34,15 +34,16 @@
       "label": "Schedule"
     },
     {
+        "route": "blog",
+        "permalink": "/blog/",
+        "label": "Blog"
+    },
+    {
       "route": "team",
       "permalink": "/team/",
       "label": "Team"
-    },
-    {
-      "route": "blog",
-      "permalink": "/blog/",
-      "label": "Blog"
     }
+
   ],
   "heroSettings": {
     "home": {
