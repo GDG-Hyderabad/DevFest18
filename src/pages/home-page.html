@@ -157,16 +157,20 @@
 
 
         <div class="action-buttons" layout horizontal left-justified wrap>
-          <paper-button
-            on-tap="_playVideo"
-            ga-on="click"
-            ga-event-category="video"
-            ga-event-action="watch"
-            ga-event-label="hero block - view highlights"
-          >
-            <iron-icon icon="hoverboard:movie"></iron-icon>
-            {$ viewHighlights $}
-          </paper-button>
+
+        <div>
+            <a
+            href="{$ speakAtDevfest.callToAction.link $}"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <paper-button class="cta-button animated icon-right">
+                <span>{$ speakAtDevfest.callToAction.label $}</span>
+                <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
+            </paper-button>
+            </a>
+        </div>
+        
           <paper-button
             on-tap="_scrollToTickets"
             ga-on="click"
@@ -216,15 +220,6 @@
             statePath: 'ui.viewport',
           },
         };
-      }
-
-      _playVideo() {
-        uiActions.toggleVideoDialog({
-          title: '{$  aboutBlock.callToAction.howItWas.title $}',
-          youtubeId: '{$  aboutBlock.callToAction.howItWas.youtubeId $}',
-          disableControls: true,
-          opened: true,
-        });
       }
 
       _scrollToTickets() {

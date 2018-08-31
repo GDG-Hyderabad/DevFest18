@@ -4,7 +4,7 @@
   "image": "images/social-share.jpg",
   "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev",
   "dates": "OCTOBER 27-28",
-  "partnershipProposition": "https://bit.ly/dfua17-partners",
+  "partnershipProposition": "#",
   "share": "Share",
   "followUs": "Follow us",
   "emailUs": "Email us",
@@ -13,7 +13,6 @@
   "buyTicket": "REGISTER",
   "signIn": "Sign in",
   "signOut": "Sign out",
-  "viewHighlights": "GDG India",
   "offlineMessage": "You can still work offline.",
   "cachingComplete": "Caching complete! Future visits will work offline.",
   "newVersionAvailable": "A new version of this app is available.",
@@ -160,6 +159,13 @@
     "callToAction": {
         "label": "Become Partner",
         "link": "https://goo.gl/He8igy"
+    }
+  },
+  "speakAtDevfest": {
+    "title": "Speak at DevFest",
+    "callToAction": {
+        "label": "BECOME SPEAKER",
+        "link": "https://sessionize.com/devfesthyd18/"
     }
   },
   "featuredVideos": {
