@@ -22,7 +22,7 @@
               installingWorker.onstatechange = () => {
                 switch (installingWorker.state) {
                   case 'installed':
-                    if (!navigator.serviceWorker.controller && toastActions) {
+                    if (navigator.serviceWorker.controller && toastActions) {
                       toastActions.showToast({
                         message: '{$ cachingComplete $}',
                       });
