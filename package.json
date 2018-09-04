@@ -27,6 +27,7 @@
     "mime": "^2.3.1",
     "mixin-deep": "^2.0.0",
     "node-mime": "^1.0.0",
+    "npm-install-peers": "^1.2.1",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
     "sshpk": "^1.14.2"
