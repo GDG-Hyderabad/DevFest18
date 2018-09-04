@@ -1,0 +1,155 @@
+[debug] [2018-09-04T13:39:53.679Z] ----------------------------------------------------------------------
+[debug] [2018-09-04T13:39:53.681Z] Command:       /usr/local/bin/node /Volumes/Work/GDG Hyderabad/DevFest18/node_modules/.bin/firebase deploy
+[debug] [2018-09-04T13:39:53.681Z] CLI Version:   3.19.3
+[debug] [2018-09-04T13:39:53.681Z] Platform:      darwin
+[debug] [2018-09-04T13:39:53.681Z] Node Version:  v8.11.3
+[debug] [2018-09-04T13:39:53.682Z] Time:          Tue Sep 04 2018 19:09:53 GMT+0530 (IST)
+[debug] [2018-09-04T13:39:53.682Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-04T13:39:53.689Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-04T13:39:53.689Z] > authorizing via signed-in user
+[debug] [2018-09-04T13:39:53.691Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-09-04T13:39:53.692Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/ECfukxkwJhpepSNURKxgdks2bvAisTRAt43u7i-TlP0',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Sep 04 2018 19:09:53 GMT+0530 (IST)
+[debug] [2018-09-04T13:39:53.987Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-04T13:39:53.993Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/devfesthyd18  
+  
+ Tue Sep 04 2018 19:09:53 GMT+0530 (IST)
+[debug] [2018-09-04T13:39:55.181Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-04T13:39:55.182Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/devfesthyd18/tokens  
+  
+ Tue Sep 04 2018 19:09:55 GMT+0530 (IST)
+[debug] [2018-09-04T13:39:56.165Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'devfesthyd18'...
+[info] 
+[info] i  deploying database, firestore, functions, hosting
+[info] Running command: npm run predeploy
+[info] Running command: npm --prefix ./functions run build
+[info] ✔  functions: Finished running predeploy script.
+[info] i  database: checking rules syntax...
+[debug] [2018-09-04T13:40:07.501Z] >>> HTTP REQUEST PUT https://devfesthyd18.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+ 
+ Tue Sep 04 2018 19:10:07 GMT+0530 (IST)
+[debug] [2018-09-04T13:40:09.299Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database devfesthyd18 is valid
+[info] i  firestore: checking firestore.rules for compilation errors...
+[debug] [2018-09-04T13:40:09.301Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/devfesthyd18:test  
+ { source: { files: [ [Object] ] } } 
+ Tue Sep 04 2018 19:10:09 GMT+0530 (IST)
+[debug] [2018-09-04T13:40:10.885Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: rules file firestore.rules compiled successfully
+[debug] [2018-09-04T13:40:10.887Z] > [functions] package.json contents: {
+  "name": "hoverboard-functions",
+  "description": "Hoverboard serverless functions",
+  "private": true,
+  "main": "dist/index.js",
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "babel src --out-dir dist --source-maps",
+    "postbuild": "cpx ../build/index.html dist/"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^1.7.0",
+    "child-process-promise": "^2.2.1",
+    "cpx": "^1.5.0",
+    "express": "^4.16.3",
+    "firebase-admin": "^6.0.0",
+    "firebase-functions": "^2.0.5",
+    "md5": "^2.2.1",
+    "mkdirp-promise": "^5.0.1",
+    "moment": "^2.22.2",
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.2",
+    "@babel/core": "^7.0.0-rc.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-rc.2",
+    "@babel/preset-env": "^7.0.0-rc.2",
+    "rimraf": "^2.6.2"
+  }
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-09-04T13:40:10.887Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/devfesthyd18?view=CONSUMER_VIEW  
+  
+ Tue Sep 04 2018 19:10:10 GMT+0530 (IST)
+[debug] [2018-09-04T13:40:10.888Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/devfesthyd18?view=CONSUMER_VIEW  
+  
+ Tue Sep 04 2018 19:10:10 GMT+0530 (IST)
+[debug] [2018-09-04T13:40:13.038Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-04T13:40:13.048Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2018-09-04T13:40:13.048Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/devfesthyd18  
+  
+ Tue Sep 04 2018 19:10:13 GMT+0530 (IST)
+[debug] [2018-09-04T13:40:14.646Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-04T13:40:14.646Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1012355382478:getServerAppConfig  
+  
+ Tue Sep 04 2018 19:10:14 GMT+0530 (IST)
+[debug] [2018-09-04T13:40:24.949Z] <<< HTTP RESPONSE 503
+[debug] [2018-09-04T13:40:24.949Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 503, The service is currently unavailable.
+[debug] [2018-09-04T13:40:24.952Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 503,
+      "message": "The service is currently unavailable.",
+      "status": "UNAVAILABLE"
+    }
+  },
+  "response": {
+    "statusCode": 503,
+    "body": {
+      "error": {
+        "code": 503,
+        "message": "The service is currently unavailable.",
+        "status": "UNAVAILABLE"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Tue, 04 Sep 2018 13:40:24 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39,35\"",
+      "accept-ranges": "none",
+      "connection": "close"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "mobilesdk-pa.googleapis.com",
+        "port": 443,
+        "hostname": "mobilesdk-pa.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1/projects/1012355382478:getServerAppConfig",
+        "path": "/v1/projects/1012355382478:getServerAppConfig",
+        "href": "https://mobilesdk-pa.googleapis.com/v1/projects/1012355382478:getServerAppConfig"
+      },
+      "method": "GET"
+    }
+  }
+}
