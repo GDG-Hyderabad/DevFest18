@@ -22,6 +22,7 @@
   "dependencies": {
     "ajv": "^6.5.3",
     "autotrack": "^2.4.1",
+    "firebase-functions": "^2.0.5",
     "hoek": "^5.0.4",
     "lodash": "^4.17.10",
     "mime": "^2.3.1",
@@ -47,7 +48,7 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-polymer": "^0.1.0",
-    "firebase-admin": "^5.12.1",
+    "firebase-admin": "6.0.0",
     "firebase-tools": "^3.19.3",
     "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",
