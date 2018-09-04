@@ -176,7 +176,7 @@ const uiActions = {
             _getPartnerItems(snap.id),
           ]))
         ))
-     .then((groups) => groups.map(([group, id, items]) => Object.assign({}, group, { id, items })))
+        .then((groups) => groups.map(([group, id, items]) => Object.assign({}, group, { id, items })))
         .then((list) => {
           dispatch({
             type: FETCH_PARTNERS_SUCCESS,
@@ -587,7 +587,7 @@ const uiActions = {
             _getTeamMembers(snap.id),
           ]))
         ))
-      .then((teams) => teams.map(([team, id, members]) => Object.assign({}, team, { id, members })))
+        .then((teams) => teams.map(([team, id, members]) => Object.assign({}, team, { id, members })))
         .then((list) => {
           dispatch({
             type: FETCH_TEAM_SUCCESS,
@@ -917,3 +917,4 @@ const uiActions = {
       }
     },
   };
+
