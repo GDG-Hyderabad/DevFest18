@@ -22,8 +22,12 @@
   "dependencies": {
     "autotrack": "^2.4.1",
     "hoek": "^5.0.4",
+    "lodash": "^4.17.10",
+    "mixin-deep": "^2.0.0",
+    "node-mime": "^1.0.0",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "sshpk": "^1.14.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.52",
