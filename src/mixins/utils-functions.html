@@ -52,8 +52,7 @@
         .filter((filter) => filter[0] && filter[1])
         .reduce((aggr, filter) => Object.assign({}, aggr, {
           [filter[0]]: aggr[filter[0]] ?
-            aggr[filter[0]].concat(filter[1]) :
-            [filter[1]],
+            aggr[filter[0]].concat(filter[1]) : [filter[1]],
         }), {});
     }
 

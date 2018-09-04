@@ -176,7 +176,7 @@ const uiActions = {
             _getPartnerItems(snap.id),
           ]))
         ))
-      .then((groups) => groups.map(([group, id, items]) => Object.assign({}, group, { id, items })))
+     .then((groups) => groups.map(([group, id, items]) => Object.assign({}, group, { id, items })))
         .then((list) => {
           dispatch({
             type: FETCH_PARTNERS_SUCCESS,
@@ -917,4 +917,3 @@ const uiActions = {
       }
     },
   };
-

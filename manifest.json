@@ -5,8 +5,7 @@
   "display": "standalone",
   "background_color": "{$ webapp.backgroundColor $}",
   "theme_color": "{$ webapp.themeColor $}",
-  "icons": [
-    {
+  "icons": [{
       "src": "images/manifest/icon-48.png",
       "sizes": "48x48",
       "type": "image/png"
