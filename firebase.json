@@ -9,7 +9,7 @@
     "hosting": {
       "public": "./build",
       "rewrites": [{
-        "source": "**",
+        "source": "/service-worker.js",
         "function": "prerender"
       }],
       "ignore": [
