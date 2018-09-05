@@ -48,9 +48,8 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-polymer": "^0.1.0",
-    "firebase-admin": "6.0.0",
+    "firebase-admin": "^5.13.1",
     "firebase-tools": "^3.19.3",
-    "request": "^2.83.0",
     "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",
     "gulp-eslint": "^4.0.0",
@@ -64,6 +63,7 @@
     "merge-stream": "^1.0.1",
     "polymer-build": "^2.5.0",
     "pre-commit": "^1.2.2",
+    "request": "^2.83.0",
     "require-uncached": "^1.0.3",
     "sw-precache": "^5.2.1",
     "uglify-es": "^3.3.9"
