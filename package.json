@@ -50,6 +50,7 @@
     "eslint-plugin-polymer": "^0.1.0",
     "firebase-admin": "6.0.0",
     "firebase-tools": "^3.19.3",
+    "request": "^2.83.0",
     "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",
     "gulp-eslint": "^4.0.0",
