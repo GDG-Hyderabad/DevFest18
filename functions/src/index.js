@@ -1,3 +1,4 @@
+import * as functions from 'firebase-functions';
 import admin from 'firebase-admin';
 
 import saveUserData from './save-user-data';
@@ -6,7 +7,6 @@ import scheduleNotifications from './schedule-notifications';
 import optimizeImages from './optimize-images';
 import mailchimpSubscribe from './mailchimp-subscribe';
 import prerender from './prerender';
-import { scheduleWrite, sessionsWrite, speakersWrite } from './schedule-generator';
 
 admin.initializeApp();
 
@@ -17,7 +17,4 @@ export {
   optimizeImages,
   mailchimpSubscribe,
   prerender,
-  scheduleWrite,
-  sessionsWrite,
-  speakersWrite,
 }

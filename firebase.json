@@ -9,7 +9,7 @@
     "hosting": {
       "public": "./build",
       "rewrites": [{
-        "source": "/service-worker.js",
+        "source": "**",
         "function": "prerender"
       }],
       "ignore": [
@@ -21,7 +21,7 @@
       ],
       "headers": [
         {
-          "source": "/service-worker.js",
+          "source": "**",
           "headers": [
             {
               "key": "X-Content-Type-Options",
@@ -38,10 +38,6 @@
             {
               "key": "Referrer-Policy",
               "value": "same-origin"
-            },
-            {
-              "key": "Cache-Control",
-              "value": "no-cache"
             }
           ]
         }
