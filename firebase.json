@@ -21,7 +21,7 @@
       ],
       "headers": [
         {
-          "source": "**",
+          "source": "/service-worker.js",
           "headers": [
             {
               "key": "X-Content-Type-Options",
@@ -38,6 +38,10 @@
             {
               "key": "Referrer-Policy",
               "value": "same-origin"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
             }
           ]
         }
