@@ -42,11 +42,11 @@ function getTimeDifference(date, startTime, endTime) {
           : [];
 
         if (!speakerSessions.filter((speakerSession) => speakerSession.id === session.id).length) {
-          speakerSessions.push(session)
+          speakerSessions.push(session);
         }
 
         result[speakerIds[i]] = Object.assign({}, speaker, {
-          sessions: speakerSessions
+          sessions: speakerSessions,
         });
       }
     }

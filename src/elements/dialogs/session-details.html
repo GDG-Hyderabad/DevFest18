@@ -182,7 +182,7 @@
 
       _close() {
         dialogsActions.closeDialog(DIALOGS.SESSION);
-        history.back()
+        history.back();
       }
 
       _openSpeaker(e) {
@@ -234,13 +234,6 @@
         return featuredSessions && featuredSessions[sessionId] ? 'bookmark-check' : 'bookmark-plus';
       }
 
-      _findSpeakers(speakers) {
-        console.log('SPEAKERS', speakers)
-        // if (speakers && typeof speakers[0] !== 'object') {
-        //   return speakers.map((speakerId) => this.speakersMap[speakerId]);
-        // }
-        return speakers;
-      }
     }
 
     window.customElements.define(SessionDetails.is, SessionDetails);
