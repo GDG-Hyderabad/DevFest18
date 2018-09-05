@@ -4,7 +4,7 @@
   "private": true,
   "main": "dist/index.js",
   "engines": {
-    "node": "8"
+    "node": "6"
   },
   "scripts": {
     "prebuild": "rimraf dist",
