@@ -21,6 +21,13 @@
 <dom-module id="session-details">
   <template>
     <style is="custom-style" include="shared-styles dialog-styles flex flex-alignment positioning"></style>
+    <style>
+
+      .section {
+        cursor: pointer;
+      }
+
+    </style>
 
     <polymer-helmet
       title="[[session.title]] | {$ title $}"
@@ -104,7 +111,11 @@
           <h3>{$ sessionDetails.speakers $}</h3>
 
           <template is="dom-repeat" items="[[_findSpeakers(session.speakers)]]" as="speaker">
-            <a href$="/speakers/[[speaker.id]]" class="section">
+            <div
+              class="section"
+              on-tap="_openSpeaker"
+              speaker-id$="[[speaker.id]]"
+            >
               <div layout horizontal center>
                 <plastic-image
                   class="section-photo"
@@ -118,7 +129,7 @@
                   <div class="section-secondary-text">[[speaker.company]] / [[speaker.country]]</div>
                 </div>
               </div>
-            </a>
+            </div>
           </template>
         </div>
       </div>
@@ -129,9 +140,9 @@
   <script>
 
     // eslint-disable-next-line no-undef
-    class SessionDetails extends UtilsFunctions(SessionsHoC(SpeakersHoC(
+    class SessionDetails extends UtilsFunctions(SpeakersHoC(
       ReduxMixin(Polymer.mixinBehaviors([Polymer.IronOverlayBehavior], Polymer.Element))
-    ))) {
+    )) {
       static get is() {
         return 'session-details';
       }
@@ -157,6 +168,10 @@
             type: Object,
             statePath: 'sessions.featured',
           },
+          currentSpeaker: {
+            type: String,
+            statePath: 'routing.subRoute',
+          },
         };
       }
 
@@ -167,6 +182,17 @@
 
       _close() {
         dialogsActions.closeDialog(DIALOGS.SESSION);
+        history.back()
+      }
+
+      _openSpeaker(e) {
+          const speakerId = e.currentTarget.getAttribute('speaker-id');
+          const speakerData = this.speakersMap[speakerId];
+
+          if (!speakerData) return;
+
+          dialogsActions.openDialog(DIALOGS.SPEAKER, speakerData);
+          dialogsActions.closeDialog(DIALOGS.SESSION);
       }
 
       _getCloseBtnIcon(isLaptopViewport) {
@@ -209,9 +235,10 @@
       }
 
       _findSpeakers(speakers) {
-        if (speakers && typeof speakers[0] !== 'object') {
-          return speakers.map((speakerId) => this.speakersMap[speakerId]);
-        }
+        console.log('SPEAKERS', speakers)
+        // if (speakers && typeof speakers[0] !== 'object') {
+        //   return speakers.map((speakerId) => this.speakersMap[speakerId]);
+        // }
         return speakers;
       }
     }
