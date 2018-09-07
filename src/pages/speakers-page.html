@@ -24,7 +24,7 @@
 
       :host {
         display: block;
-        background-color: var(--primary-background-color);
+        height: 100%;
       }
 
       .container {
@@ -41,6 +41,10 @@
         transition: box-shadow var(--animation);
       }
 
+      .speaker:hover {
+        box-shadow: var(--box-shadow);
+      }
+
       .photo {
         width: 128px;
         height: 128px;
@@ -48,14 +52,6 @@
         border-radius: 50%;
         overflow: hidden;
         transform: translateZ(0);
-      }
-      .color-box-shadow {
-        box-shadow: var(--box-shadow);
-        transition: box-shadow var(--animation);
-      }
-
-      .color-box-shadow:hover{
-        box-shadow: var(--box-shadow-primary-color-hover);
       }
 
       .badges {
@@ -156,9 +152,9 @@
     </style>
 
     <polymer-helmet
-      title="Speakers | GDG DevFest Hyderabad"
+      title="Speakers | GDG DevFest Ukraine"
       description="Learn more about speakers"
-      active="[[_setHelmetData(active, isDialogOpened)]]"
+      active="[[_setHelmetData(active, isSpeakerDialogOpened, isSessionDialogOpened)]]"
     ></polymer-helmet>
 
     <iron-location query="{{queryParams}}"></iron-location>
@@ -187,13 +183,14 @@
       results-count="[[speakersToRender.length]]"
     ></filter-menu>
 
-
-    <!--
     <content-loader
       class="container"
+      card-padding="32px"
+      card-height="400px"
       avatar-size="128px"
       avatar-circle="64px"
       horizontal-position="50%"
+      box-shadow="var(--box-shadow)"
       items-count="{$ contentLoaders.speakers.itemsCount $}"
       hidden$="[[contentLoaderVisibility]]"
     ></content-loader>
@@ -204,7 +201,7 @@
         items="[[speakersToRender]]"
         as="speaker"
       >
-        <a class="speaker"
+        <a class="speaker card"
            href$="[[speaker.link]]"
            ga-on="click"
            ga-event-category="speaker"
@@ -212,7 +209,7 @@
            ga-event-label$="[[speaker.name]]">
           <div relative>
             <plastic-image
-              class="photo color-box-shadow"
+              class="photo"
               srcset="[[speaker.photoUrl]]"
               sizing="cover"
               lazy-load preload fade
@@ -263,7 +260,6 @@
         </a>
       </template>
     </div>
-    -->
 
     <previous-speakers-block></previous-speakers-block>
 
@@ -288,10 +284,13 @@
             type: Object,
             observer: '_paramsUpdated',
           },
-          isDialogOpened: {
+          isSpeakerDialogOpened: {
             type: Object,
             statePath: 'dialogs.speaker.isOpened',
-            observer: '_dialogStatusChanged',
+          },
+          isSessionDialogOpened: {
+            type: Object,
+            statePath: 'dialogs.session.isOpened',
           },
           contentLoaderVisibility: {
             type: String,
@@ -326,28 +325,24 @@
         }
       }
 
-      _dialogStatusChanged(nextState, prevState) {
-        if (!nextState && prevState && this.active && this.routeData.speakerId) {
-          history.back();
-        }
-      }
-
       _openSpeakerDetails(active, speakers, speakersMap, id) {
         if (speakers && speakers.length) {
           requestAnimationFrame(() => {
             if (active && id) {
               const speakerData = speakersMap[id];
               speakerData && dialogsActions.openDialog(DIALOGS.SPEAKER, speakerData);
-            } else if (this.isDialogOpened) {
-              dialogsActions.closeDialog(DIALOGS.SPEAKER);
+            } else {
+               this.isSpeakerDialogOpened && dialogsActions.closeDialog(DIALOGS.SPEAKER);
+               this.isSessionDialogOpened && dialogsActions.closeDialog(DIALOGS.SESSION);
             }
           });
         }
       }
 
-      _setHelmetData(active, isDialogOpened) {
-        return active && !isDialogOpened;
+      _setHelmetData(active, isSpeakerDialogOpened, isSessionDialogOpened) {
+        return active && !isSpeakerDialogOpened && !isSessionDialogOpened;
       }
+
       _onFiltersLoad(filters) {
         this.set('_filters', [{
           title: '{$ filters.tags $}',
@@ -355,10 +350,12 @@
           items: filters.tags,
         }]);
       }
-       _paramsUpdated(queryParams) {
+
+      _paramsUpdated(queryParams) {
         this.set('_selectedFilters', this.parseQueryParamsFilters(queryParams));
       }
-       _filterItems(speakers, selectedFilters) {
+
+      _filterItems(speakers, selectedFilters) {
         return speakers.filter((speaker) => {
           if (!selectedFilters || !selectedFilters.length) return true;
           return speaker.tags
@@ -372,3 +369,4 @@
 
   </script>
 </dom-module>
+

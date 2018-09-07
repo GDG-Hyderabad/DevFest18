@@ -34,7 +34,9 @@ function getTimeDifference(date, startTime, endTime) {
     for (let i = 0; i < speakerIds.length; i++) {
       const speaker = speakersRaw[speakerIds[i]];
       const generatedSpeaker = generatedSpeakers[speakerIds[i]];
-      const hasSessionsAssigned = generatedSpeaker && generatedSpeaker.sessions && generatedSpeaker.sessions.length;
+      const hasSessionsAssigned = generatedSpeaker
+        && generatedSpeaker.sessions
+        && generatedSpeaker.sessions.length;
 
       if (speaker) {
         const speakerSessions = hasSessionsAssigned
@@ -57,7 +59,6 @@ function getTimeDifference(date, startTime, endTime) {
     const speakersRaw = data.speakers;
     const sessionsRaw = data.sessions;
     const scheduleRaw = data.schedule;
-
 
     let schedule = {};
     let sessions = {};
@@ -122,10 +123,8 @@ function getTimeDifference(date, startTime, endTime) {
               })) : [],
             });
 
-
             subSessions.push(finalSubSession);
             sessions[sessionId] = finalSubSession;
-
             if (subsession.speakers) {
               speakers = Object.assign(
                 {},
