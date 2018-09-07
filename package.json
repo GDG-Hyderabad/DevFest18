@@ -23,6 +23,7 @@
     "autotrack": "^2.4.1",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
+    "typed-text": "^1.1.0",
     "update-node": "^0.1.0"
   },
   "devDependencies": {
