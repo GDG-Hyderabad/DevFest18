@@ -1,6 +1,8 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
 
 <link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+<link rel="import"href="../bower_components/typed-text/typed-text.html">
+<link rel="import" href="./bower_components/typed-text/demo/app-theme.html">
 
 <link rel="import" href="../elements/about-block.html">
 <link rel="import" href="../elements/speakers-block.html">
@@ -14,6 +16,9 @@
 <link rel="import" href="../elements/about-organizer-block.html">
 <link rel="import" href="../mixins/scroll-functions.html">
 <link rel="import" href="../mixins/redux-mixin.html">
+
+<script src="../webcomponentsjs/webcomponents-lite.js"></script>
+
 
 <dom-module id="home-page">
   <template>
@@ -36,13 +41,38 @@
         max-width: 240px;
       }
 
-      .info-item-hyd {
-        margin: 10px auto;
+      .info-item {
         font-size: 14px;
+        line-height: 2.5;
       }
 
       .info-item-hyd > *:not(:first-of-type) {
         margin-top: 4px;
+      }
+
+      .text-hero {
+          margin: auto;
+          font-size: 34px;
+          font-weight: bold;
+          text-transform: uppercase;
+
+      }
+
+      .type-text-hero {
+          margin: auto;
+          font-size: 34px;
+          line-height: 1.5;
+          font-weight: bold;
+          text-transform: uppercase;
+
+      }
+
+      .hero-tagline {
+        font-size: 16px;
+        color: #ffc107;
+        line-height: 1.5;
+        margin: 17px auto;
+        text-align: center;
       }
 
       .action-buttons {
@@ -123,18 +153,37 @@
           max-width: 320px;
         }
 
-        .info-item-hyd {
+        .info-item {
           margin:auto;
           font-size: 24px;
-          line-height: 3.1;
+          line-height: 2.5;
+          text-align: left;
         }
-        .info-item-hero {
+
+        .text-hero {
           margin: auto;
-          font-size: 70px;
-          line-height: 1.1;
+          font-size: 80px;
+          text-transform: uppercase;
           font-weight: bold;
+          text-align: left;
         }
-    
+
+        .type-text-hero {
+          margin: auto;
+          font-size: 80px;
+          text-transform: uppercase;
+          line-height: 1.1;
+          font-weight: medium;
+          text-align: left;
+        }
+
+        .hero-tagline {
+          font-size: 24px;
+          line-height: 2.1;
+          color: #ffc107;
+          text-align: left;
+        }
+
       }
     </style>
 
@@ -149,11 +198,21 @@
     >
       <div class="home-content">
         <div class="info-item-hyd highlight-font">
-          <div class="info-item" align="left">{$ location.city $}. {$ dates $}</div>
+          <div class="info-item">{$ location.city $}. {$ dates $}</div>
         </div>
-        <div class="info-item-hero highlight-font">
-            <div class="info-item" align="left">{$ heroSettings.home.description $}</div>
+
+        <div class="text-hero highlight-font">{$ heroSettings.home.heroText $}</div>
+
+        <div class="type-text-hero highlight-font">
+            <typed-text cursor="|" noretype="" loop="" strings="[
+                &quot;Developers&quot;,
+                &quot;Entrepreneurs&quot;,
+                &quot;Designers&quot;,
+                &quot;Tech Enthusiasts&quot;
+                ]"></typed-text>
         </div>
+
+        <div class="hero-tagline">{$ heroSettings.home.description $}</div>
 
 
         <div class="action-buttons" layout horizontal left-justified wrap>
@@ -170,7 +229,7 @@
             </paper-button>
             </a>
         </div>
-        
+
           <paper-button
             on-tap="_scrollToTickets"
             ga-on="click"
