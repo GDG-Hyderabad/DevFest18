@@ -24,6 +24,7 @@
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
     "typed-text": "^1.1.0",
+    "typed.js": "^2.0.9",
     "update-node": "^0.1.0"
   },
   "devDependencies": {

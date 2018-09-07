@@ -31,7 +31,6 @@
     "iron-overlay-behavior": "PolymerElements/iron-overlay-behavior#^2.0.0",
     "iron-dropdown": "PolymerElements/iron-dropdown#^2.0.0",
     "good-map": "keanulee/good-map#^0.0.1",
-    "typed-text": "sespiros/typed-text",
     "paper-menu-button": "PolymerElements/paper-menu-button#^2.0.0",
     "paper-toast": "^2.1.0",
     "paper-progress": "^2.1.1"
