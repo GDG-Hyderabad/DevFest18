@@ -25,32 +25,35 @@
 
     <style>
 
-      :host {
-        display: block;
-        height: 100%;
-      }
-
-      .container {
-        min-height: 80%;
-      }
-
-      paper-progress {
-        width: 100%;
-        --paper-progress-active-color: var(--default-primary-color);
-        --paper-progress-secondary-color: var(--default-primary-color);
-      }
-
-      @media (max-width: 640px) {
-        .container {
-          padding: 0 0 32px;
-        }
-      }
-
-      @media (min-width: 640px) {
         :host {
-          background-color: #fff;
+          display: block;
+          min-height: 100%;
+          background-color: var(--primary-background-color);
         }
-      }
+
+        .container {
+          background-color: var(--primary-background-color);
+          max-width: 80%;
+          min-height: 100%;
+        }
+
+        paper-progress {
+          width: 100%;
+          --paper-progress-active-color: var(--default-primary-color);
+          --paper-progress-secondary-color: var(--default-primary-color);
+        }
+
+        @media (max-width: 640px) {
+          .container {
+            padding: 0 0 32px;
+          }
+        }
+
+        @media (min-width: 640px) {
+          :host {
+            background-color: var(--primary-background-color);
+          }
+        }
 
     </style>
 
