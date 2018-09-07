@@ -21,7 +21,6 @@
         padding: 8px 16px;
         color: var(--secondary-text-color);
         letter-spacing: -0.04em;
-        border-bottom: 1px solid var(--border-light-color);
       }
 
       .hours {
@@ -49,6 +48,11 @@
       .add-session-icon {
         --iron-icon-width: 14px;
         margin-right: 8px;
+      }
+
+      .subsession {
+          box-shadow: var(--box-shadow);
+          transition: box-shadow var(--animation);
       }
 
       @media (min-width: 812px) {
