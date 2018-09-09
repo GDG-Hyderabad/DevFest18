@@ -75,6 +75,11 @@
       paper-button {
         margin-top: 16px;
         color: var(--text-primary-color);
+        width: 146px;
+      }
+
+      a {
+        color: white;
       }
 
       @media (min-width: 640px) {
@@ -123,6 +128,10 @@
           padding: 24px;
           grid-area: 2 / 3 / 2 / 5;
         }
+
+        a {
+          color: white;
+        }
       }
 
     </style>
@@ -136,15 +145,16 @@
           lazy-load preload fade
         ></plastic-image>
       </template>
-      <div class="gallery-info" layout vertical justified>
-        <div>
-          <h2>{$ galleryBlock.title $}</h2>
-          <p>{$ galleryBlock.description $}</p>
+        <div class="gallery-info" layout vertical justified>
+            <div>
+              <h2>{$ galleryBlock.title $}</h2>
+              <p>{$ galleryBlock.description $}</p>
+            </div>
+            <paper-button>
+             <a href="{$ galleryBlock.callToAction.link $}" target="_blank" rel="noopener noreferrer">
+                {$ galleryBlock.callToAction.label $}
+            </paper-button></a>
         </div>
-        <a href="{$ galleryBlock.callToAction.url $}" target="_blank" rel="noopener noreferrer">
-          <paper-button>{$ galleryBlock.callToAction.label $}</paper-button>
-        </a>
-      </div>
     </div>
 
   </template>

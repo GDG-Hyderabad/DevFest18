@@ -49,7 +49,7 @@
       }
 
       @media (min-width: 640px) {
-        .container, 
+        .container,
         .container-narrow {
             padding: 64px 15px;
         }
@@ -91,16 +91,11 @@
       </template>
 
         <div>
-            <a
-            href="{$ partnersBlock.callToAction.link $}"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
             <paper-button class="cta-button animated icon-right">
+             <a href="{$ partnersBlock.callToAction.link $}" target="_blank" rel="noopener noreferrer">
                 <span>{$ partnersBlock.callToAction.label $}</span>
                 <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
-            </paper-button>
-            </a>
+            </paper-button></a>
         </div>
     </div>
 

@@ -24,7 +24,7 @@
         grid-gap: 32px;
         grid-template-columns: 1fr;
       }
-      
+
       .description-image {
         position: relative;
         display: block;
@@ -40,7 +40,7 @@
         width: 100%;
         opacity: 0.1;
       }
-  
+
       .statistics-block {
         width: 100%;
         display: grid;
@@ -82,43 +82,27 @@
     </style>
 
     <div class="container">
-      
+
       <div class="content">
-        
+
         <div>
           <h1 class="container-title">{$ aboutBlock.title $}</h1>
-          <p>{$ aboutBlock.callToAction.featuredSessions.description $}</p>
-          <a
-            href="{$ aboutBlock.callToAction.featuredSessions.link $}"
-            ga-on="click"
-            ga-event-category="video"
-            ga-event-action="watch"
-            ga-event-label="about block - {$ aboutBlock.callToAction.featuredSessions.label $}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+            <p>{$ aboutBlock.callToAction.featuredSessions.description $}</p>
+
             <paper-button class="animated icon-right">
+              <a href="{$ aboutBlock.callToAction.featuredSessions.link $}" target="_blank" rel="noopener noreferrer">
               <span class="cta-label">{$ aboutBlock.callToAction.featuredSessions.label $}</span>
               <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
-            </paper-button>
-          </a>
+            </paper-button></a>
 
-          <p>{$ aboutBlock.callToAction.howItWas.description $}</p>
-          <a
-            href="{$ aboutBlock.callToAction.howItWas.link $}"
-            ga-on="click"
-            ga-event-category="video"
-            ga-event-action="watch"
-            ga-event-label="about block - {$ aboutBlock.callToAction.howItWas.label $}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+            <p>{$ aboutBlock.callToAction.howItWas.description $}</p>
+
             <paper-button class="animated icon-right">
+              <a href="{$ aboutBlock.callToAction.howItWas.link $}" target="_blank" rel="noopener noreferrer">
               <span class="cta-label">{$ aboutBlock.callToAction.howItWas.label $}</span>
               <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
-            </paper-button>
-          </a>
-          </paper-button>
+            </paper-button></a>
+
         </div>
 
         <div class="statistics-block">
