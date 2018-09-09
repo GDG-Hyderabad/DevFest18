@@ -108,6 +108,10 @@
         animation: updown 2s infinite;
       }
 
+      a {
+          color: #FFFFFF;
+        }
+
       @keyframes updown {
         0% {
           transform: translate(0, 0)
@@ -132,6 +136,10 @@
           justify-content: center !important;
         }
 
+        a {
+          color: #FFFFFF;
+        }
+
       }
 
       @media (min-height: 500px) {
@@ -151,6 +159,10 @@
           left: 50%;
           transform: translateX(-50%);
           z-index: 2;
+        }
+
+        a {
+          color: #FFFFFF;
         }
 
       }
@@ -195,6 +207,10 @@
           text-align: left;
         }
 
+        a {
+          color: #FFFFFF;
+        }
+
       }
     </style>
 
@@ -228,18 +244,11 @@
 
         <div class="action-buttons" layout horizontal left-justified wrap>
 
-        <div>
-            <a
-            href="{$ speakAtDevfest.callToAction.link $}"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            <paper-button class="cta-button animated icon-right">
-                <span>{$ speakAtDevfest.callToAction.label $}</span>
-                <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
-            </paper-button>
-            </a>
-        </div>
+         <paper-button class="cta-button animated icon-right">
+            <a href="{$ speakAtDevfest.callToAction.link $}" target="_blank" rel="noopener noreferrer">
+            <span>{$ speakAtDevfest.callToAction.label $}</span>
+            <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
+         </paper-button></a>
 
           <paper-button
             on-tap="_scrollToTickets"
