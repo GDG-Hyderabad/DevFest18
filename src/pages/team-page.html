@@ -19,15 +19,10 @@
       }
 
       .description-wrapper {
-        background: linear-gradient(to right, #b24592, #f15f79);
-        width: 100%;
         overflow: hidden;
-      }
-
-      .description-image {
         position: relative;
-        display: block;
-        width: 100%;
+        color: white;
+        background: linear-gradient(to right, #b24592, #f15f79);
       }
 
       .description-bgimage {
@@ -40,7 +35,10 @@
         opacity: 0.1;
       }
 
-    
+      .description-text {
+        padding: 32px;
+      }
+
       .team-title {
         font-size: 30px;
         line-height: 2.5;
@@ -145,17 +143,15 @@
       <div class="hero-title highlight-font">{$ heroSettings.team.title $}</div>
       <p class="hero-description">{$ heroSettings.team.description $}</p>
     </hero-block>
-     
 
-    <div class="description-wrapper">
-      <div class="description-image" >
+
+    <div class="description-wrapper" layout horizontal justified>
         <div class="description-bgimage" style="background-image: url(../images/pattern-white.png)"></div>
-        <div class="container" layout horizontal justified>
+        <div class="description-text">
           <marked-element class="description" markdown="{$ team.description $}">
             <div slot="markdown-html"></div>
-          </marked-element> 
+          </marked-element>
         </div>
-      </div> 
     </div>
 
     <div class="container">
