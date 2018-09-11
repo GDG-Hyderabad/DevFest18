@@ -251,17 +251,11 @@
             <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
          </paper-button></a>
 
-          <paper-button
-            on-tap="_scrollToTickets"
-            ga-on="click"
-            ga-event-category="tickets"
-            ga-event-action="scroll"
-            ga-event-label="hero block - scroll to tickets"
-            primary invert
-          >
+          <paper-button primary invert>
+            <a href="https://goo.gl/t2ZbBV" target="_blank" rel="noopener noreferrer">
+            <span>{$ buyTicket $}</span>
             <iron-icon icon="hoverboard:ticket"></iron-icon>
-            {$ buyTicket $}
-          </paper-button>
+          </paper-button></a>
         </div>
 
         <div class="scroll-down" on-tap="_scrollNextBlock">
@@ -300,15 +294,6 @@
             statePath: 'ui.viewport',
           },
         };
-      }
-
-      _scrollToTickets() {
-        // eslint-disable-next-line no-undef
-        const toolbarHeight = HOVERBOARD.Elements.HeaderToolbar.getBoundingClientRect().height - 1;
-        // eslint-disable-next-line no-undef
-        const ticketsBlockPositionY = HOVERBOARD.Elements.Tickets.getBoundingClientRect().top
-          - toolbarHeight;
-        this.scrollToY(ticketsBlockPositionY, 600, 'easeInOutSine');
       }
 
       _scrollNextBlock() {
