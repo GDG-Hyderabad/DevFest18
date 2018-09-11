@@ -2,9 +2,9 @@
   "title": "GDG DevFest Hyderabad 2018",
   "description": "GDG DevFest Hyderabad brings together the community experts in Android, Web and Cloud technologies to Hyderabad for 2 days of sessions, workshops and code labs. Hyderabad DevFest can be considered as “Technical Diwali” that celebrates the achievements of the computing world and the constant urge to connect, code and innovate.",
   "image": "images/social-share.jpg",
-  "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev",
+  "keywords": "event, gdg, gde, hyderabad, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev",
   "dates": "October 27-28",
-  "partnershipProposition": "#",
+  "partnershipProposition": "https://drive.google.com/open?id=11iaayz5UATjkmsYwDObmvBmOA5xJKxxg",
   "share": "Share",
   "followUs": "Follow us",
   "emailUs": "Email us",
@@ -90,12 +90,7 @@
       "links": [
         {
           "name": "Partnership Proposition",
-          "url": "#",
-          "newTab": true
-        },
-        {
-          "name": "Info Partnership Proposition",
-          "url": "#",
+          "url": "https://drive.google.com/open?id=11iaayz5UATjkmsYwDObmvBmOA5xJKxxg",
           "newTab": true
         },
         {
