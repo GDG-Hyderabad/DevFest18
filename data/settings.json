@@ -48,7 +48,7 @@
   "heroSettings": {
     "home": {
       "heroText": "A Conference For",
-      "description": "Join us in Telangana's Largest Developers Conference to Connect, Code & Innovate.",
+      "description": "Join us in Telangana's Largest Developers' Conference to Connect, Code & Innovate.",
       "background": {
         "color": "#673ab7",
         "image": "/images/backgrounds/home.png"
@@ -65,8 +65,8 @@
     },
     "speakers": {
       "title": "Speakers",
-      "metaDescription": "This year DevFest will host a wide array of speakers from various technology domains. More information will be provided in the coming weeks as we finalize the speakers and agenda. Stay tuned for updates!",
-      "description": "This year DevFest will host a wide array of speakers from various technology domains. More information will be provided in the coming weeks as we finalize the speakers and agenda. Stay tuned for updates!",
+      "metaDescription": "This year's DevFest will host a wide array of speakers from various technology domains. More information will be provided in the upcoming weeks as we finalize the speakers and the agenda. Stay tuned for updates!",
+      "description": "This year's DevFest will host a wide array of speakers from various technology domains. More information will be provided in the upcoming weeks as we finalize the speakers and the agenda. Stay tuned for updates!",
       "background": {
         "color": "#FFF"
       },
@@ -83,7 +83,7 @@
     "schedule": {
       "title": "Schedule",
       "metaDescription": "Choose your sessions to visit",
-      "description":"A top notch line-up of developers will be sharing their knowledge and experience with attendees. Topics will cover everything from CSS to Neural Networks! We’re working on pulling together a fantastic agenda, so stay tuned for more details coming soon!",
+      "description":"A top notch line-up of developers will be sharing their knowledge and experience with attendees. Topics will cover everything spanning from CSS to Neural Networks! We’re working on pulling together a fantastic agenda, so stay tuned for more details coming soon!",
       "background": {
         "color": "#fff"
       },
