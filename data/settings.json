@@ -47,7 +47,8 @@
   ],
   "heroSettings": {
     "home": {
-      "heroText": "A Conference For",
+      "heroText": "A Conference",
+      "heroTextDev":"Developers",
       "description": "Join us in Telangana's Largest Developers' Conference to Connect, Code & Innovate.",
       "background": {
         "color": "#673ab7",

@@ -179,23 +179,26 @@
 
         .info-item {
           margin:auto;
-          font-size: 24px;
+          font-size: 18px;
           line-height: 2.5;
           text-align: left;
         }
 
+
         .text-hero {
           margin: auto;
-          font-size: 80px;
+          font-size: 70px;
           text-transform: uppercase;
+          letter-spacing: 3px;
           font-weight: bold;
           text-align: left;
         }
 
         .type-text-hero {
           margin: auto;
-          font-size: 80px;
+          font-size: 70px;
           text-transform: uppercase;
+          letter-spacing: 3px;
           line-height: 1.1;
           font-weight: medium;
           text-align: left;
@@ -231,14 +234,16 @@
 
         <div class="text-hero highlight-font">{$ heroSettings.home.heroText $}</div>
 
-        <div class="type-text-hero highlight-font">
-            <typed-text cursor="|" noretype="" loop="" strings="[
-                &quot;Developers&quot;,
-                &quot;Entrepreneurs&quot;,
-                &quot;Designers&quot;,
-                &quot;Technophiles&quot;
-                ]"></typed-text>
-        </div>
+            <div class="type-text-hero highlight-font">
+                <typed-text cursor="|" noretype="" loop="" strings="[
+                    &quot;of the&quot;,
+                    &quot;by the&quot;,
+                    &quot;for the&quot;
+                    ]">
+                </typed-text>
+            </div>
+
+            <div class="text-hero highlight-font">{$ heroSettings.home.heroTextDev $}</div>
 
         <div class="hero-tagline">{$ heroSettings.home.description $}</div>
 
