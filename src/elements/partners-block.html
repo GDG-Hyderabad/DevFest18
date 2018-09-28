@@ -26,7 +26,7 @@
       .logos-wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        grid-gap: 8px;
+        grid-gap: 12px;
       }
 
       .logo-item {
@@ -34,12 +34,23 @@
       }
 
       .logo-img {
-        height: 60px;
+        height: 135px;
         width: 100%;
       }
 
       .cta-button {
         margin-top: 24px;
+      }
+
+      @media (max-width: 415px) {
+        .logos-wrapper {
+          grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .logo-item {
+          padding: 5px;
+        }
       }
 
       @media (min-width: 640px) {
